@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'globals';
+
+
+body {
+  background-color: $primary-color;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $secondary-color;
+}
+
+.right-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  gap: 30px;
+}
