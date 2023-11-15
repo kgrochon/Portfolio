@@ -2,14 +2,16 @@
   font-family: "MyFont";
   src: local("MyFont"), url(../fonts/PPRightSerif/PPRightSerifMedium.otf) format("opentype");
   /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
+                              'embedded-opentype', and 'svg' */
 }
 html {
   font-size: 100%;
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -24,7 +26,7 @@ body {
 }
 
 body {
-  background-color: #B8AF60;
+  background-color: #8d9c84;
 }
 
 .nav-list {
@@ -33,7 +35,6 @@ body {
   list-style: none;
   justify-content: space-between;
   padding: 20px;
-  background-color: white;
 }
 
 .right-nav {
@@ -42,4 +43,10 @@ body {
   list-style: none;
   justify-content: space-between;
   gap: 30px;
+}
+
+.split-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

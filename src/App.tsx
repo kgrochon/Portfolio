@@ -2,7 +2,7 @@ import Career from './components/Career'
 import Contact from './components/Contact'
 import Experiments from './components/Experiments'
 import Home from './components/Home'
-import './scss/style.css'
+import './css/style.css'
 
 function App() {
 
