@@ -5,7 +5,7 @@ function Home() {
 
   return (
     <div className="split-section">
-        <div style={{width: "300px", height: "600px"}}>
+        <div style={{width: "300px", height: "500px"}}>
             <News />
         </div>
     </div>

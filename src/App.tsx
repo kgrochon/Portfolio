@@ -1,6 +1,3 @@
-import Career from './components/Career'
-import Contact from './components/Contact'
-import Experiments from './components/Experiments'
 import Home from './components/Home'
 import './css/style.css'
 
