@@ -1,11 +1,10 @@
 import News from "./art/News";
-
 // Home Conent
 function Home() {
 
   return (
-    <div className="split-section">
-        <div style={{width: "300px", height: "500px"}}>
+    <div className="home">
+        <div className="content-container">
             <News />
         </div>
     </div>

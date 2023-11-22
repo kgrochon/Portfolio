@@ -29,23 +29,27 @@ body {
 
 .sun {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   // right: 20px;
   // top: 20px;
   width: 50px;
   height: 50px;
   background-color: rgb(246, 246, 106);
   border-radius: 100%;
-  border: 5px solid #f47c57;
+  border: 5px solid #4e2d23;
+  transform: rotate(45deg);
 
   .half {
-    position: absolute;
-    top: 8%;
-    left: 10%;
-    transform: rotate(45deg);
     height: 50%;
-    width: 110%;
+    width: 100%;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
-    border-bottom: 5px solid #f47c57;
+  }
+
+  .bottom {
+    transform: rotate(180deg);
+    border-bottom: 5px solid #4e2d23;
+    background-color: rgb(239, 148, 57);
   }
 }
