@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import ThreeLava from "./ThreeLava";
 import ThreeCanvas from "../../lib/ThreeCavas";
 

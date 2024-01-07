@@ -24,7 +24,7 @@ function ScrollControl ({ children, setScrollPosition} : ScrollProps) {
     <div
       ref={scrollRef}
       style={{
-        position: 'fixed',
+        position: 'relative',
         top: 0,
         left: 0,
         height: `100vh`, 

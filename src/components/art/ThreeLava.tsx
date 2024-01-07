@@ -1,8 +1,6 @@
-import React, { useRef, useMemo } from 'react';
+import React, { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Mesh, ShaderMaterial, Color, TextureLoader } from 'three';
-import lava from "../../assets/lava.png";
-import { useTexture } from '@react-three/drei';
+import { Mesh } from 'three';
 
 const ThreeLava: React.FC = () => {
   const mesh = useRef<Mesh>(null!);

@@ -1,5 +1,4 @@
 import "../../css/news.css";
-import { Clock } from "./Clock";
 import { LavaLamp } from "./LavaLamp";
 import { Klock } from "./Klock";
 import { Sun } from "./Sun";
