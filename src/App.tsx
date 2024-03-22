@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ScrollControl from './components/controls/ScrollControl'
 import './css/style.css'
 import headshot from "./assets/katherine.png";
@@ -6,12 +6,14 @@ import Nav from './components/Nav';
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
-
+  useEffect(() => {
+    console.log("nice :)");
+  },[])
 
   return (
     <ScrollControl setScrollPosition={setScrollPosition}>
       <div style={{position: "absolute", width: "100%"}}>
-        <header>
+        <header className="header">
           <h1>KATHERINE ROCHON</h1>
           <h2 className="header-h2">Software Engineer</h2>
         <Nav scrollPosition={scrollPosition} />
@@ -21,7 +23,7 @@ function App() {
         {/* Home  */}
         <div className="section"></div>
         {/* About  */}
-        <div className="section about">
+        <div className="about">
           <div className="grid-container-al">
             <img src={headshot} alt={"Katherine smiling with a cat"} />
           </div>

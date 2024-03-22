@@ -36,6 +36,7 @@ header {
 
 h1 {
   font-size: 10vw;
+  line-height: 8vw;
 }
 
 .sun {
@@ -70,9 +71,12 @@ body {
   height: 300vh;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+}
+
 .header-h2 {
-  position: relative;
-  top: -50px;
   font-size: 6vw;
   color: #4d2222;
   opacity: 50%;
@@ -80,100 +84,6 @@ body {
 
 ul {
   font-size: 14px;
-}
-
-.nav {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  display: flex;
-  flex-direction: row;
-  height: 140px;
-}
-
-.nav-list {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  justify-content: space-evenly;
-  text-align: right;
-  padding-right: 20px;
-}
-
-.slide-switch {
-  position: relative;
-  height: 100%;
-  width: 5px;
-  background-color: #4d2222;
-  display: flex;
-}
-
-.handle {
-  position: absolute;
-  touch-action: none;
-  left: -10px;
-}
-
-.box {
-  position: absolute;
-  width: 20px;
-  height: 5px;
-  margin: 10% auto;
-  background: #fff;
-  box-shadow: -10px 5px 30px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  transform: skewY(0deg);
-  border: 1px solid #4d2222;
-  box-sizing: content-box;
-}
-
-.box::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 21px;
-  width: 3px;
-  height: 150%;
-  background-color: #4d2222;
-  transform-origin: left bottom;
-  transform: skewY(40deg);
-}
-
-.box::after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: -1px;
-  width: 110%;
-  height: 3px;
-  background: #4d2222;
-  transform-origin: top left;
-  transform: skewX(45deg);
-}
-
-.handle:before,
-.handle:after {
-  box-sizing: border-box;
-  width: 2em;
-  height: 1em;
-  bottom: 0.9em;
-  background-color: #d5d5d5;
-  border: 0.2em solid;
-  -o-border-image: linear-gradient(to right, #655125 10%, #dbb25e 10%, #907335 60%, #655125 60%, #655125 80%, #907335 80%) 1 1;
-     border-image: linear-gradient(to right, #655125 10%, #dbb25e 10%, #907335 60%, #655125 60%, #655125 80%, #907335 80%) 1 1;
-  box-shadow: 0 0 0.2em black(0.1), 0.1em 0.1em 0.1em black(0.2), inset 0.2em 0.2em 0.1em black(0.7);
-}
-
-.handle:before {
-  left: 11%;
-}
-
-.handle:after {
-  left: 54%;
-}
-
-.handle:hover {
-  cursor: pointer;
 }
 
 .split-section {
@@ -194,7 +104,7 @@ ul {
 
 .section {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .about {
